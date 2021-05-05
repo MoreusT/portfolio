@@ -1,0 +1,3 @@
+@function rem($target, $current:$baseFontSize) {
+    @return ($target / $current) * 1rem;
+  }
