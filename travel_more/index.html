@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHROMAON</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5474fd">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#5474fd">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#5474fd">
+
+    <meta name="description" content="BHROMAON website about travelling and searching best places to visit.">
+
+    <meta property="og:title" content="Safe Travel Anywhere">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moreust.github.io/githomework/021/travel_more/">
+    <meta property="og:image" content="https://moreust.github.io/githomework/021/travel_more/assets/images/og_icon.jpg">
+    <meta property="og:site_name" content="BHROMAON">
+    <meta property="og:description" content="Search your travel destination">
+
+    <meta name="twitter:title" content="Safe Travel Anywhere">
+    <meta name="twitter:description" content="Search your travel destination">
+    <meta name="twitter:image"
+        content="https://moreust.github.io/githomework/021/travel_more/assets/images/og_icon.jpg">
+
+    <meta name="robots" content="all">
+    <meta name="revisit-after" content="1 days">
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <div class="mobile-menu-block mmb">
+        <div class="mmb__top">
+            <div class="mmb__logo">Bhromaon</div>
+            <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="mmb__mobile-menu mob-menu">
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Who We Are</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">What We Do</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Travel With Us</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mobile-menu-shadow"></div>
+
+    <div id="to-top"></div>
+
+    <div id="to-top-mobile"></div>
+
+    <section class="first_screen" itemscope itemtype="https://schema.org/WebPage">
+        <div class="first_screen-container">
+            <div class="flex">
+                <h1 class="main_title" itemprop="name">Bhromaon</h1>
+                <div class="tagline" itemprop="about">Safe&nbsp;Travel&nbsp;Anywhere</div>
+                <div class="search_box">
+                    <form action="https://www.google.com/search" class="search_form" name="search_form" method="GET">
+                        <input type="text" class="search_input" name="q" placeholder="Search Your Travel Destination">
+                        <button type="submit" class="search_btn" aria-label="search" value="search">
+                            <span class="search_btn-text">Search</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="20px" height="22px" class="search_btn-icon">
+                                <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                    d="M19.993,19.980 L18.949,21.027 L13.182,15.243 C12.850,15.542 12.486,15.809 12.088,16.041 C11.690,16.274 11.276,16.473 10.845,16.639 C10.414,16.806 9.958,16.931 9.478,17.013 C8.997,17.096 8.525,17.138 8.061,17.138 C6.934,17.138 5.881,16.922 4.904,16.490 C3.926,16.058 3.072,15.476 2.344,14.745 C1.614,14.014 1.043,13.158 0.629,12.177 C0.214,11.197 0.007,10.158 0.007,9.061 C0.007,7.931 0.214,6.876 0.629,5.895 C1.043,4.915 1.614,4.059 2.344,3.327 C3.072,2.596 3.926,2.023 4.904,1.607 C5.881,1.192 6.934,0.984 8.061,0.984 C9.155,0.984 10.190,1.192 11.168,1.607 C12.146,2.023 12.999,2.596 13.729,3.327 C14.457,4.059 15.038,4.915 15.469,5.895 C15.899,6.876 16.115,7.931 16.115,9.061 C16.115,9.527 16.073,10.000 15.991,10.482 C15.908,10.964 15.783,11.421 15.618,11.853 C15.452,12.285 15.253,12.700 15.021,13.099 C14.789,13.498 14.524,13.864 14.226,14.196 L19.993,19.980 L19.993,19.980 ZM0.852,9.061 C0.852,10.058 1.034,10.989 1.399,11.853 C1.763,12.717 2.277,13.482 2.940,14.146 C3.603,14.812 4.374,15.335 5.252,15.717 C6.130,16.099 7.067,16.290 8.061,16.290 C9.055,16.290 9.983,16.099 10.845,15.717 C11.707,15.335 12.469,14.812 13.132,14.146 C13.795,13.482 14.317,12.717 14.698,11.853 C15.079,10.989 15.270,10.058 15.270,9.061 C15.270,8.064 15.079,7.125 14.698,6.244 C14.317,5.364 13.795,4.591 13.132,3.926 C12.469,3.261 11.707,2.746 10.845,2.380 C9.983,2.015 9.055,1.831 8.061,1.831 C7.067,1.831 6.130,2.015 5.252,2.380 C4.374,2.746 3.603,3.261 2.940,3.926 C2.277,4.591 1.763,5.364 1.399,6.244 C1.034,7.125 0.852,8.064 0.852,9.061 L0.852,9.061 Z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="scroll_text">Scroll Down</div>
+            </div>
+        </div>
+    </section>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="flex">
+                <div class="header__logo logo">Bhromaon</div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">Who We Are</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">What We Do</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Travel With Us</a></li>
+                        <li class="menu__item menu__item--last"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu__link" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="replacer"></div>
+    <main>
+        <section class="why-choose-us lazy-bg" data-src="assets/images/bg-img2.jpg">
+            <div class="container">
+                <div class="flex">
+                    <div class="why-choose-us_text-block text_block">
+                        <h2 class="text-block_title title">Why Choose Us</h2>
+                        <p class="text-block_text text">Tion and dislike men who are so beguiled and demoralized by
+                            desire by the charms of pleasure of the moment, so blinded by desire, that they cannot
+                            foresee</p>
+                        <p class="text-block_text text">Ddislike men who are so beguiled and demoralized by the charms
+                            of
+                            pleasure of the moment, so blinded by desire, that.</p>
+                        <a href="#" class="text-block_btn btn" target="_blank" rel="noopener noreferrer">Explore
+                            Places</a>
+                    </div>
+                    <div class="why-choose-us_img-block">
+                        <img class="lazy img_1"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="dock, river, mountain" data-src="assets/images/img_1.jpg">
+                        <img class="lazy img_2"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="mountains, forest, women" data-src="assets/images/img_2.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="container">
+                <ul class="steps_list">
+                    <li class="steps_item">
+                        <img class="search_img lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="search sign, magnifier" data-src="assets/images/search.svg">
+                        <div class="steps_title title">Search Places</div>
+                    </li>
+                    <li class="steps_item steps_item-middle">
+                        <img class="select_img lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="check sign" data-src="assets/images/check.svg">
+                        <div class="steps_title title">Select Places</div>
+                    </li>
+                    <li class="steps_item">
+                        <img class="book_img lazy"
+                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                            alt="thumb up, like sign" data-src="assets/images/like.svg">
+                        <div class="steps_title title">Book & Enjoy</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="present lazy-bg" data-src="assets/images/bg-img3.jpg">
+            <div class="container">
+                <div class="flex">
+                    <div class="present_block pblock">
+                        <div class="pblock_country">Spain</div>
+                        <h3 class="pblock_title">Grand Spain Madrid</h3>
+                        <p class="pblock_text text">But I must explain to you how all this mistaken idea of account to
+                            denouncing pleasure and praising pain was account born and I account will give you a
+                            complete account of the system</p>
+                        <div class="pblock_btn btn">Book Now</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="present-reverse lazy-bg" data-src="assets/images/bg-img4.jpg">
+            <div class="container">
+                <div class="flex">
+                    <div class="present_block pblock">
+                        <div class="pblock_country">Spain</div>
+                        <h3 class="pblock_title">Grand Spain Madrid</h3>
+                        <p class="pblock_text text">But I must explain to you how all this mistaken idea of account to
+                            denouncing pleasure and praising pain was account born and I account will give you a
+                            complete account of the system</p>
+                        <div class="pblock_btn btn">Book Now</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tourist-say lazy-bg" data-src="assets/images/bg-img5.jpg">
+            <div class="container">
+                <h2 class="tourist-say_title title">What&nbsp;Our Tourist&nbsp;Say</h2>
+                <div class="tourist-say_block tsay-block">
+                    <img class="tsay-block_img lazy"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                        alt="man, on top of mountains, fog" data-src="assets/images/img_3.jpg">
+                    <div class="tsay-block_description">
+                        <div class="tsay-block_name">Sam Sumon</div>
+                        <p class="tsay-block_text text"><i class="icon icon-quote-left"></i>But I must explain to you
+                            how all
+                            this mistaken idea of account to
+                            denouncinpleasure and praising pain But I must explain to you how all this mistaken idea of
+                            account to nai denouncing pleasure and praising pain was account born and I account will
+                            give
+                            you a complete account of the system was account born and I account will give you a nai the
+                            complete account of the system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_block">
+                <div class="footer_logo logo">Bhromaon</div>
+                <div class="footer_tagline">Safe&nbsp;Travel&nbsp;Anywhere</div>
+                <nav class="footer_nav">
+                    <ul class="footer_list">
+                        <li class="footer_item"><a href="https://www.facebook.com/" class="footer_link"
+                                rel="noopener noreferrer" target="_blank"><i class="footer_icon icon-facebook"></i></a>
+                        </li>
+                        <li class="footer_item"><a href="https://twitter.com/" class="footer_link"
+                                rel="noopener noreferrer" target="_blank"><i class="footer_icon icon-twitter"></i></a>
+                        </li>
+                        <li class="footer_item"><a href="https://www.linkedin.com/" class="footer_link"
+                                rel="noopener noreferrer" target="_blank"><i class="footer_icon icon-linkedin"></i></a>
+                        </li>
+                        <li class="footer_item"><a href="https://www.youtube.com/" class="footer_link"
+                                rel="noopener noreferrer" target="_blank"><i
+                                    class="footer_icon icon-youtube-play"></i></a></li>
+                        <li class="footer_item"><a href="https://www.pinterest.com/" class="footer_link"
+                                rel="noopener noreferrer" target="_blank"><i
+                                    class="footer_icon icon-pinterest-circled"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/intersection-observer.js"></script>
+    <script src="assets/js/lazyload.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
