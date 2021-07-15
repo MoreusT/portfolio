@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monticello</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#7e5aff">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#7e5aff">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#7e5aff">
+
+    <meta name="description" content="Monticello company that makes world's beautiful every day">
+
+    <meta property="og:title" content="Simple and Modern">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moreust.github.io/portfolio/monticello/">
+    <meta property="og:image" content="https://moreust.github.io/portfolio/monticello/images/og_img.jpg">
+    <meta property="og:site_name" content="Monticello">
+    <meta property="og:description" content="We make the world's beautiful every day">
+
+    <meta name="twitter:title" content="Simple and Modern">
+    <meta name="twitter:description" content="We make the world's beautiful every day">
+    <meta name="twitter:image"
+        content="https://moreust.github.io/portfolio/monticello/images/og_img.jpg">
+
+    <meta name="robots" content="all">
+    <meta name="revisit-after" content="1 days">
+
+    <link rel="preload" href="fonts/GothamBook.woff2" as="font" type="font/woff2" crossorigin class="font_link">
+    <link rel="preload" href="fonts/gothambold1.woff2" as="font" type="font/woff2" crossorigin class="font_link">
+
+    <style>
+        @font-face{font-display: swap;font-family:'GothamSubset';src:url('fonts/gotham-medium-webfont.woff2') format('woff2'),url('fonts/gotham-medium-webfont.woff') format('woff');}
+        @font-face{font-display: swap;font-family:'Gotham';src:url('fonts/GothamBook.woff2') format('woff2'),url('fonts/GothamBook.woff') format('woff');font-weight:300;}
+        @font-face{font-display: swap;font-family:'Gotham';src:url('fonts/gotham-medium-webfont.woff2') format('woff2'),url('fonts/gotham-medium-webfont.woff') format('woff');font-weight:400;}
+        @font-face{font-display: swap;font-family:'Gotham';src:url('fonts/gothambold1.woff2') format('woff2'),url('fonts/gothambold1.woff') format('woff');font-weight:700;}
+        @font-face{font-display: swap;font-family:'Open Sans';src:url('fonts/open-sans-v20-latin-regular.woff2') format('woff2'),url('fonts/open-sans-v20-latin-regular.woff') format('woff');font-weight:400;}
+        @font-face{font-display: swap;font-family:'Open Sans';src:url('fonts/open-sans-v20-latin-italic.woff2') format('woff2'),url('fonts/open-sans-v20-latin-italic.woff') format('woff');font-weight:400;font-style: italic;}
+    </style>
+
+    <link rel="preload" href="plugins/wow_animate/animate.min.css" as="style" onload="this.rel='stylesheet'" class="style_link">
+    <link rel="preload" href="plugins/lightslider/css/lightslider.min.css" as="style" onload="this.rel='stylesheet'" class="style_link">
+    <link rel="preload" href="plugins/lightgallery/css/lightgallery-bundle.min.css" as="style" onload="this.rel='stylesheet'" class="style_link">
+    <link rel="preload" href="css/style.css" as="style" onload="this.rel='stylesheet'" class="style_link">
+
+    <script>
+        function supportsPreload(){let rl=document.createElement("link").relList;if(rl.supports && "preload"){return rl.supports("preload");}else{return false;}}
+        if(!supportsPreload()){
+            let style_links = document.getElementsByClassName("style_link");
+            for(let i=0;i<style_links.length;i++){
+                style_links[i].setAttribute("rel", "stylesheet");
+                style_links[i].removeAttribute("as");
+                style_links[i].removeAttribute("onload");
+            }
+            let font_links = document.getElementsByClassName("font_link");
+            for(let i=0;i<font_links.length;i++){
+                font_links[i].setAttribute("rel", "font");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="mobile-menu-block mmb">
+        <div class="mmb__top">
+            <div class="mmb__logo"><img class="mmb__logo-img lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Monticello logo" data-src="images/logo.svg"></div>
+            <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <nav class="mmb__mobile-menu mob-menu">
+            <ul class="mob-menu__list">
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">About Us</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">Projects</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="#">News</a></li>
+                <li class="mob-menu__item"><a class="mob-menu__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">Contact</a></li>
+            </ul>
+            <nav class="mob__soc">
+                <ul class="mmb__soc-list mob-soc">
+                    <li class="mob-soc__item"><a href="https://www.facebook.com/" class="mob-soc__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-facebook"></i></a></li>
+                    <li class="mob-soc__item"><a href="https://twitter.com/" class="mob-soc__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-twitter"></i></a></li>
+                    <li class="mob-soc__item"><a href="https://www.instagram.com/" class="mob-soc__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-instagram"></i></a></li>
+                </ul>
+            </nav>
+        </nav>
+    </div>
+
+    <div id="mobile-menu-shadow"></div>
+
+    <div id="to-top"></div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="flex">
+                <div class="header__logo"><img class="header__logo-img lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="Monticello logo" data-src="images/logo.svg"></div>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Projects</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">News</a></li>
+                        <li class="menu__item menu__item--last"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="menu__link" target="_blank" rel="noopener noreferrer">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="header__soc">
+                    <ul class="header__soc-list soc-list">
+                        <li class="soc-list__item"><a href="https://www.facebook.com/" class="soc-list__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li class="soc-list__item"><a href="https://twitter.com/" class="soc-list__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-twitter"></i></a></li>
+                        <li class="soc-list__item"><a href="https://www.instagram.com/" class="soc-list__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger hamburger--elastic" type="button" aria-label="mobile menu button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="first-screen" itemscope itemtype="https://schema.org/WebPage">
+            <div class="fs-slider__wrap">
+                <div class="fs-slider">
+                    <div class="fs-slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                        <h2 class="fs-slider__item-title">Simple & Mordern</h2>
+                        <div class="fs-slider__item-tagline">We make the world's beautiful every day</div>
+                    </div>
+                    <div class="fs-slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                        <h2 class="fs-slider__item-title">Second slider title</h2>
+                        <div class="fs-slider__item-tagline">Just another tagline</div>
+                    </div>
+                    <div class="fs-slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                        <h2 class="fs-slider__item-title">Third slider title</h2>
+                        <div class="fs-slider__item-tagline">Still tagline</div>
+                    </div>
+                    <div class="fs-slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                        <h2 class="fs-slider__item-title">Actualy not so simple</h2>
+                        <div class="fs-slider__item-tagline">Also tagline</div>
+                    </div>
+                    <div class="fs-slider__item lazy-bg" data-src="images/first-screen_bg.jpg">
+                        <h2 class="fs-slider__item-title">You should know, that this is fifth slider item.</h2>
+                        <div class="fs-slider__item-tagline">Don't you have enough taglines today?</div>
+                    </div>
+                </div>
+                <div class="first-screen__btn arrow-btn"><a href="javascript:void(0)" id="scroll_down"></a></div>
+            </div>
+        </section>
+        <section class="what-we-do wwd">
+            <div class="container">
+                <h2 class="wwd__title title">What we do</h2>
+                <div class="wwd__block wwd__block-left wwd-blk wow animate__slideInLeft">
+                    <div class="wwd-blk__img-blk"><img class="wwd-blk__img lazy"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                        alt="big white futuristic building" data-src="images/wwd-img_01.jpg">
+                    </div>
+                    <div class="wwd-blk__text-blk">
+                        <div class="wwd-blk__pretitle">One world</div>
+                        <h2 class="wwd-blk__title">Trade Center</h2>
+                        <p class="wwd-blk__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                        <a href="#" class="btn wwd-blk__btn">More details</a>
+                        <a href="https://maps.google.com/?q=New Yourk" class="wwd-blk__link" rel="noopener noreferrer" target="_blank"><i class="icon-location"></i>New York City, United States - 1776 feet</a>
+                    </div>
+                </div>
+                <div class="wwd_block wwd__block-right wwd-blk wow animate__slideInRight">
+                    <div class="wwd-blk__img-blk"><img class="wwd-blk__img lazy"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                        alt="factory style hight building" data-src="images/wwd-img_02.jpg">
+                    </div>
+                    <div class="wwd-blk__text-blk">
+                        <div class="wwd-blk__pretitle">International</div>
+                        <h2 class="wwd-blk__title">Commerce Centre</h2>
+                        <p class="wwd-blk__text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                        <a href="#" class="btn wwd-blk__btn">More details</a>
+                        <a href="https://maps.google.com/?q=Hong Kong" class="wwd-blk__link" rel="noopener noreferrer" target="_blank"><i class="icon-location"></i>Hong Kong - 1588 Feet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="latest-news ln lazy-bg" data-src="images/latest-news_bg.jpg">
+            <div class="container">
+                <h2 class="latest-news__title title">Latest news</h2>
+                <div class="ln-slider__wrap">
+                    <div class="ln-slider">
+                        <div class="ln-slider__item ln-it">
+                            <a href="#" class="ln-it__link">
+                                <img class="ln-it__img lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="concrete building" data-src="images/ln-img_01.jpg">
+                            </a>
+                            <div class="ln-it__btm-blk">
+                                <div class="ln-it__title"><a href="#" class="ln-it__title-link">Just one more slider</a></div>
+                                <div class="ln-it__text">The first one in a row</div>
+                                <div class="ln-it__author-block a-blk">
+                                    <img class="a-blk__img lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="girl long hair" data-src="images/photo_01.png">
+                                    <div class="a-blk__text-block">
+                                        <div class="a-blk__name">Ricardo Miles</div>
+                                        <div class="a-blk__date">20 Jun 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ln-slider__item ln-it">
+                            <a href="#" class="ln-it__link">
+                            <img class="ln-it__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="concrete building" data-src="images/ln-img_01.jpg">
+                            </a>
+                                <div class="ln-it__btm-blk">    
+                                <div class="ln-it__title"><a href="#" class="ln-it__title-link">See The Unmatched Beauty Of The Great. Lakes.</a></div>
+                                <div class="ln-it__text">Free directories: directories are perfect for customers that are... searching for a particular topic.</div>
+                                <div class="ln-it__author-block a-blk">
+                                    <img class="a-blk__img lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="girl long hair" data-src="images/photo_01.png">
+                                    <div class="a-blk__text-block">
+                                        <div class="a-blk__name">Isaac Dunn</div>
+                                        <div class="a-blk__date">09 Feb 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ln-slider__item ln-it">
+                            <a href="#" class="ln-it__link">
+                            <img class="ln-it__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="modern hight wite building" data-src="images/ln-img_02.jpg">
+                            </a>
+                                <div class="ln-it__btm-blk">
+                                <div class="ln-it__title"><a href="#" class="ln-it__title-link">Effective Advertising Pointers.</a></div>
+                                <div class="ln-it__text">Having a home based business is a wonderful asset to your life...</div>
+                                <div class="ln-it__author-block a-blk">
+                                    <img class="a-blk__img lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="guy landscape view" data-src="images/photo_02.png">
+                                    <div class="a-blk__text-block">
+                                        <div class="a-blk__name">Dominic Freeman</div>
+                                        <div class="a-blk__date">24 Apr 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ln-slider__item ln-it">
+                            <a href="#" class="ln-it__link">
+                            <img class="ln-it__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="modern round hight white building" data-src="images/ln-img_03.jpg">
+                            </a>
+                                <div class="ln-it__btm-blk">
+                                <div class="ln-it__title"><a href="#" class="ln-it__title-link">Hypnotize Yourself Into The Ghost.</a></div>
+                                <div class="ln-it__text">There are many things that are important to catalog design....</div>
+                                <div class="ln-it__author-block a-blk">
+                                    <img class="a-blk__img lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="smiling lady" data-src="images/photo_03.png">
+                                    <div class="a-blk__text-block">
+                                        <div class="a-blk__name">Alice Ward</div>
+                                        <div class="a-blk__date">30 Dec 2017</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ln-slider__item ln-it">
+                            <a href="#" class="ln-it__link">
+                            <img class="ln-it__img lazy"
+                                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                alt="modern hight wite building" data-src="images/ln-img_02.jpg">
+                            </a>
+                                <div class="ln-it__btm-blk">
+                                <div class="ln-it__title"><a href="#" class="ln-it__title-link">And another slider</a></div>
+                                <div class="ln-it__text">Last but not least</div>
+                                <div class="ln-it__author-block a-blk">
+                                    <img class="a-blk__img lazy"
+                                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="guy landscape view" data-src="images/photo_02.png">
+                                    <div class="a-blk__text-block">
+                                        <div class="a-blk__name">Just Harold</div>
+                                        <div class="a-blk__date">10 Jul 2020</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ln-slider__btn arrow-btn ln-slider__btn-prev"><a href="javascript:void(0)" id="ln-slider_prev"></a></div>
+                    <div class="ln-slider__btn arrow-btn ln-slider__btn-next"><a href="javascript:void(0)" id="ln-slider_next"></a></div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <h2 class="gallery__title title">Gallery</h2>
+                <div class="gallery__lightgallery lightgallery wow animate__slideInUp" id="lightgallery">
+                    <a class="lightgallery__link lightgallery__link-big" href="images/gallery-img_01.jpg" data-lg-size="580-438">
+                        <span class="lightgallery__zoom"></span>
+                        <img class="lightgallery__img lazy" alt="city building" data-src="images/gallery-img_01.jpg" />
+                    </a>
+                    <a class="lightgallery__link" href="images/gallery-img_02.jpg" data-lg-size="285-214">
+                        <span class="lightgallery__zoom"></span>
+                        <img class="lightgallery__img lazy" alt="city building" data-src="images/gallery-img_02.jpg" />
+                    </a>
+                    <a class="lightgallery__link" href="images/gallery-img_03.jpg" data-lg-size="285-214">
+                        <span class="lightgallery__zoom"></span>
+                        <img class="lightgallery__img lazy" alt="city building" data-src="images/gallery-img_03.jpg" />
+                    </a>
+                    <a class="lightgallery__link" href="images/gallery-img_04.jpg" data-lg-size="285-214">
+                        <span class="lightgallery__zoom"></span>
+                        <img class="lightgallery__img lazy" alt="city building" data-src="images/gallery-img_04.jpg" />
+                    </a>
+                    <a class="lightgallery__link" href="images/gallery-img_05.jpg" data-lg-size="285-214">
+                        <span class="lightgallery__zoom"></span>
+                        <img class="lightgallery__img lazy" alt="city building" data-src="images/gallery-img_05.jpg" />
+                    </a>
+                </div>
+                <a class="gallery__btn btn">See more</a>
+            </div>
+        </section>
+        <section class="get-in-touch">
+            <div class="get-in-touch__map" id="map">
+                <img class="get-in-touch__map-preview lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="map preview" data-src="images/map.jpg" id="map_pic">
+                <a class="get-in-touch__map-text" href="javascript:void(0)" id="map_link">Click for interact map</a>
+            </div>
+                <div class="get-in-touch__submit-form gint-sf lazy-bg" data-src="images/get-in-touch_bg.jpg">
+                    <div class="gint-sf__top">
+                        <h2 class="gint-sf__title title">Get in touch</h2>
+                    </div>
+                    <div class="gint-sf__btm">
+                        <div class="gint-sf__contact-blk cblk">
+                            <a class="cblk__location cblk__link" href="https://maps.google.com/?q=Miami" rel="noopener noreferrer" target="_blank" itemscope itemtype="https://schema.org/PostalAddress" itemprop="streetAddress"><i class="icon-location"></i>91&nbsp;Nolan&nbsp;Extensions Suite&nbsp;670</a>
+                            <a class="cblk__tel cblk__link" href="tel:+0013568682454" itemscope itemtype="https://schema.org/ContactPoint" itemprop="telephone"><i class="icon-phone"></i>+001&nbsp;356-868-2454</a>
+                            <a class="cblk__email cblk__link" href="email:gahuy93@gmail.com" itemscope itemtype="https://schema.org/ContactPoint" itemprop="email"><i class="icon-inbox"></i>gahuy93@gmail.com</a>
+                            <div class="cblk__clock cblk__link" itemscope itemtype="https://schema.org/Time"><i class="icon-clock"></i>From&nbsp;<span itemprop="opens">07:05AM</span> to&nbsp;<span itemprop="closes">19:30PM</span></div>
+                        </div>
+                        <div class="gint-sf__form-blk fblk">
+                            <form class="fblk__form" name="submit_form" id="submit_form">
+                                <div class="fblk__inpt-blk">
+                                    <input class="fblk__name fblk__input" type="text" placeholder="Your name" name="name" id="fblk_name" data-required>
+                                    <div id="name_err" class="fblk__err"></div>
+                                </div>
+                                <div class="fblk__inpt-blk">
+                                    <input class="fblk__email fblk__input" type="text" placeholder="Email" name="email" id="fblk_email" data-required>
+                                    <div id="email_err" class="fblk__err"></div>
+                                </div>
+                                <button type="submit" class="fblk__btn btn" id="submit_btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer class="footer lazy-bg"  data-src="images/footer_bg.jpg">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__logo"><img class="footer__logo-img lazy"
+                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
+                    alt="Monticello logo" data-src="images/logo.svg"></div>
+                <nav class="footer__soc-links">
+                    <ul class="footer__soc-list footer-soc">
+                        <li class="footer-soc__item"><a href="https://www.facebook.com/" class="footer-soc__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-facebook"></i></a></li>
+                        <li class="footer-soc__item"><a href="https://twitter.com/" class="footer-soc__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-twitter"></i></a></li>
+                        <li class="footer-soc__item"><a href="https://www.instagram.com/" class="footer-soc__link soc_link" rel="noopener noreferrer" target="_blank"><i class="icon-instagram"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__copyright">Copyrights © 2017 Monticello</span>
+                <span class="footer__made-by">Made with <i class="icon-heart"></i>by MoreusT</span>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="js/intersection-observer.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/top_panel.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="plugins/wow_animate/wow.min.js"></script>
+    <script src="plugins/lightslider/js/lightslider.min.js"></script>
+    <script src="plugins/lightgallery/lightgallery.min.js"></script>
+    <script src="plugins/lightgallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="plugins/lightgallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

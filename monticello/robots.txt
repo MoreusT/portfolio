@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://moreust.github.io/githomework/042/monticello/dist/sitemap.xml
+Host: https://moreust.github.io/githomework/042/monticello/dist/
